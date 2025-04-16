@@ -1,0 +1,6 @@
+- song wechseln -> ton stoppen
+- stimmen schön formatiert, zusammen mit player
+- stimmenauswahl startet auch player
+- ohne songauswahl keinen player anzeigen
+- partitur herunterladen
+- setlists

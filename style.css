@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.app {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f8ff;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0.5rem 0;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.sidebar li:hover {
+    background-color: #e0e0ff;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+#stimmen-buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#stimmen-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+#stimmen-buttons button.active {
+    background-color: #6c63ff;
+    color: white;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Prob-O-Mat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <h2>Songs</h2>
+        <ul id="song-list"></ul>
+    </aside>
+    <main class="content" id="main-content">
+        <h1>Prob-O-Mat</h1>
+        <p>Wähle links einen Song aus.</p>
+        <div id="player">
+            <video id="video" width="600" controls muted></video>
+            <div id="stimmen-buttons"></div>
+        </div>
+    </main>
+</div>
+<script src="songs.js"></script>
+</body>
+</html>
