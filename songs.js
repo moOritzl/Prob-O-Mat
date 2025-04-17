@@ -19,6 +19,13 @@ function renderSongList(songs) {
 let currentAudio = null;
 
 function showSong(song) {
+    if (currentAudio) {
+        currentAudio.pause();
+        currentAudio = null;
+    }
+
+    document.getElementById("player").style.display = "block";
+
     const base = `songs/${song.folder}/`;
     const video = document.getElementById("video");
     const stimmenButtons = document.getElementById("stimmen-buttons");
@@ -56,17 +63,29 @@ function showSong(song) {
 }
 
 function switchVoice(src, currentTime, buttonEl) {
+    const video = document.getElementById("video");
+
     if (currentAudio) {
         currentAudio.pause();
     }
+
     currentAudio = new Audio(src);
     currentAudio.currentTime = currentTime;
-    currentAudio.play();
+
+    if (video.paused) {
+        video.play();
+        currentAudio.addEventListener("canplay", () => {
+            currentAudio.play();
+        }, {once: true});
+    } else {
+        currentAudio.play();
+    }
 
     document.querySelectorAll("#stimmen-buttons button").forEach(btn => {
         btn.classList.remove("active");
     });
     buttonEl.classList.add("active");
 }
+
 
 loadSongs();

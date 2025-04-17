@@ -14,5 +14,22 @@
     ],
     "video": "Der Mond lacht.mp4",
     "partitur": "Der Mond Lacht - Partitur.pdf"
+  },
+  {
+    "title": "Oh Jonny",
+    "folder": "Oh Jonny",
+    "stimmen": [
+      "01 Alle Stimmen.mp3",
+      "02 Sopran.mp3",
+      "03 Mezzo.mp3",
+      "04 Alt 1.mp3",
+      "05 Alt 2.mp3",
+      "06 Tenor 1.mp3",
+      "07 Tenor 2.mp3",
+      "08 Bariton.mp3",
+      "09 Bass.mp3"
+    ],
+    "video": "Oh Jonny.mp4",
+    "partitur": "Oh Jonny - AuerVoices.pdf"
   }
 ]
